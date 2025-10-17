@@ -1,1 +1,58 @@
-*.sqlite*
+# Created by https://www.gitignore.io/api/laravel
+.DS_Store
+.env
+.env.backup
+.env.local
+.env.*.php
+.env.php
+.gitignore
+.phpunit.result.cache
+.secrets
+.styleci.yml
+.vscode
+.web
+Thumbs.db
+
+# Laravel
+.idea
+.vagrant
+/public/hot
+/public/storage
+/public/vendor
+/storage/*.key
+/vendor
+/bootstrap/cache/*
+!.gitkeep
+/node_modules
+
+# Compiled
+*.com
+*.exe
+*.out
+*.pyc
+*.swp
+*.zip
+*.rar
+*.7z
+
+# Log files
+*.log
+/storage/logs/*
+
+# Environment
+.env*
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

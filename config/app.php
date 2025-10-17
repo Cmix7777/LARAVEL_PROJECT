@@ -1,8 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Facade;
-use Illuminate\Support\ServiceProvider;
-
 return [
 
     /*
@@ -57,7 +54,7 @@ return [
 
     'url' => env('APP_URL', 'http://localhost'),
 
-    'asset_url' => env('ASSET_URL'),
+    'asset_url' => env('ASSET_URL', null),
 
     /*
     |--------------------------------------------------------------------------
@@ -70,7 +67,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'UTC', // Измените на 'Europe/Moscow' если нужно, как в примере из книги
 
     /*
     |--------------------------------------------------------------------------
@@ -83,7 +80,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'en', // Измените на 'ru' если нужно, как в примере из книги
 
     /*
     |--------------------------------------------------------------------------
@@ -125,7 +122,7 @@ return [
     'key' => env('APP_KEY'),
 
     'cipher' => 'AES-256-CBC',
-
+    
     /*
     |--------------------------------------------------------------------------
     | Maintenance Mode Driver

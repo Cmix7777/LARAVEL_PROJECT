@@ -67,7 +67,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC', // Измените на 'Europe/Moscow' если нужно, как в примере из книги
+    'timezone' => 'Europe/Moscow', // Изменено на 'Europe/Moscow' если нужно, как в примере из книги
 
     /*
     |--------------------------------------------------------------------------
@@ -80,7 +80,7 @@ return [
     |
     */
 
-    'locale' => 'en', // Измените на 'ru' если нужно, как в примере из книги
+    'locale' => 'ru', // Изменено на 'ru' для русского языка
 
     /*
     |--------------------------------------------------------------------------
@@ -122,7 +122,7 @@ return [
     'key' => env('APP_KEY'),
 
     'cipher' => 'AES-256-CBC',
-    
+
     /*
     |--------------------------------------------------------------------------
     | Maintenance Mode Driver
@@ -152,7 +152,7 @@ return [
     |
     */
 
-    'providers' => ServiceProvider::defaultProviders()->merge([
+    'providers' => \Illuminate\Support\ServiceProvider::defaultProviders()->merge([
         /*
          * Package Service Providers...
          */
@@ -178,7 +178,7 @@ return [
     |
     */
 
-    'aliases' => Facade::defaultAliases()->merge([
+    'aliases' => \Illuminate\Support\Facades\Facade::defaultAliases()->merge([
         // 'Example' => App\Facades\Example::class,
     ])->toArray(),
 
